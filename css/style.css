@@ -426,7 +426,16 @@ footer>#copyr {
         margin: auto;  
         /* background: #000;       */
     }
+    #icon{
+        margin-left: 10px;
+    }
+    #sepBoderL{
+        margin-right: 10px;
+    }
     .navbar>form{
+        display: none;
+    }
+    #signUpLI{
         display: none;
     }
     .selective-list-1{
@@ -446,9 +455,9 @@ footer>#copyr {
         /* background-color: red; */
     }
     main>.flex-container>.cards {
-        margin: 6px 15px;
-        width: 100%;
-        height: 500px;
+        margin: 6px 6px;
+        width: 45%;
+        height: 250px;
         /* outline: 2px solid rgb(158, 158, 158); */
         /* outline-offset: -2px; */
         border-radius: 5px;
