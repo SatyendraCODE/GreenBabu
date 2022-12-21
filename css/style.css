@@ -1,0 +1,483 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter Tight', sans-serif;
+    background-color: #4a4a4a;
+}
+
+/* navcss */
+
+nav {
+    background-color: rgb(56, 56, 56);
+    /* outline: 100px solid rgb(56, 56, 56); */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.navcontainer {
+    width: 1240px;
+    margin: auto;
+    /* border: 1px solid; */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;    
+}
+
+/* logo */
+.navbar>#icon {
+    display: flex;
+    align-items: center;
+}
+
+.navbar>#icon>img {
+    height: 50px;
+}
+
+.navbar>#icon>a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(12, 182, 12);
+}
+
+/* search */
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar>input {
+    width: 320px;
+    padding: .5rem 1rem;
+    min-width: 150px;
+    outline: none;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    font-size: .9rem;
+}
+
+.search-bar>input:focus {
+    /* outline: 3px solid rgb(6 157 6); */
+    /* outline: 2px solid rgb(6 157 6);
+    outline-offset: -3px; */
+}
+
+.search-bar>button {
+    cursor: pointer;
+    border: none;
+    /* outline: 3px solid rgb(6 157 6); */
+    border-radius: 0 8px 8px 0;
+    overflow: hidden;
+    width: 36px;
+    background-color: rgb(6 157 6);
+    transition: .5s;
+}
+
+.search-bar>button>img {
+    position: relative;
+    top: 1px;
+    height: 30px;
+    filter: invert(100%);
+}
+
+.search-bar>button:hover>img {
+    filter: invert(0%);
+}
+
+/* navlist */
+
+.navbar>ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar>ul>li {
+    margin: 0; 
+    padding: 0;   
+}
+.navbar>ul>li>#cartA{
+    padding: 1rem 1.2rem;   
+}
+.navbar>ul>li>#plaA{
+    padding: 1rem 1.45rem;   
+}
+.navbar>ul>li>#supportA{
+    padding: 1rem 1.1rem;   
+}
+.navbar>ul>li>a {
+    color: white;
+    margin: 0;
+    padding: 1rem 1rem;
+    text-decoration: none;
+}
+.navbar>ul>li>a:hover {
+    color: white;
+    background: rgb(6 157 6);
+    transition: .8s;
+}
+.navbar>ul #sepBoderR{
+    border-right: 1px solid rgb(33, 33, 33);
+    padding-right: 10px;
+}
+.navbar>ul #sepBoderL{
+    padding-left: 10px;
+}
+
+/* -------DropDown menu---------- */
+
+#plaLi,#sepBoderR{
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 35px;
+    flex-direction: column;
+    border-radius: 0px 0 10px 10px;
+    overflow: hidden;
+}
+
+.dropdown-content>li .planDrop {
+    padding: .4rem .8rem;
+    border-bottom: 2px solid rgb(81, 81, 81);
+}
+
+.dropdown-content>li .supDrop {
+    padding: .4rem .45rem;
+    border-bottom: 2px solid rgb(81, 81, 81);
+}
+
+/* 1st dropdown menu "plants" */
+.navbar>ul>li:hover #planDropUl {
+    display: flex;
+}
+
+#plaLi>ul>li {
+    list-style: none;
+    overflow: hidden;
+}
+
+#plaLi>ul>li>a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    font-size: 1rem;
+    transition: .4s;
+}
+
+#plaLi>ul>li>a:hover {
+    background-color: rgb(6 157 6);
+}
+
+/* 2nd dropdown menu "support" */
+#sepBoderR>ul>li {
+    list-style: none;
+    overflow: hidden;
+}
+
+#sepBoderR>ul>li>a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    font-size: 1rem;
+    transition: .4s;
+}
+
+#sepBoderR>ul>li>a:hover {
+    background-color: rgb(6 157 6);
+}
+
+
+/* ---------------selective-list----------------------- */
+.selective-list-1 {
+    margin-top: 50px;
+    width: 100%;
+    background-color: black;
+    font-size: 1.1em;    
+}
+
+.selective-list-1>ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selective-list-1>ul>li {
+    list-style: none;
+    padding: .3em 0em;
+}
+
+.selective-list-1>ul>li>a {
+    text-decoration: none;
+    color: white;
+    padding: .3em 2em;
+    transition: .5s;
+}
+
+.selective-list-1>ul>li>a:hover {
+    background-color: rgb(6 157 6);
+    border-bottom: .5px solid white;
+    /* border: 2px solid rgb(255, 255, 255); */
+}
+
+/* selective-list-2 */
+.selective-list-2 {
+    width: 100%;
+    background-color: rgb(72, 72, 72);
+    font-size: 1em;
+    position: sticky;
+    top: 50px;
+}
+
+.selective-list-2>ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(96, 96, 96);
+}
+
+.selective-list-2>ul>li {
+    list-style: none;
+    padding: .3em .40em;
+}
+
+.selective-list-2>ul>li>a {
+    text-decoration: none;
+    color: white;
+    padding: .3em .60em;
+    transition: .2s;
+}
+
+.selective-list-2>ul>li>a:hover {
+    /* background-color: rgb(6 157 6);
+    border-left: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid rgb(255, 255, 255); */
+    color: rgb(6 157 6);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+/*------------------- main page------------------------ */
+main {
+    margin: 5px 0 5px;
+    display: flex;
+    justify-content: center;
+}
+
+main>.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1280px;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+main>.flex-container>.cards {
+    margin: 5px 10px;
+    width: 190px;
+    height: 300px;
+    /* outline: 2px solid rgb(158, 158, 158); */
+    /* outline-offset: -2px; */
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    overflow: hidden;
+}
+
+main>.flex-container>.cards>img {
+    height: 150px;
+    width: 150px;
+}
+
+main>.flex-container>.cards>p {
+    text-align: center;
+    width: 95%;
+    height: 120px;
+    overflow: hidden;
+}
+
+main>.flex-container>.cards>a {
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    line-height: 40px;
+    outline: none;
+    background-color: rgb(13, 147, 13);
+    color: white;
+    transition: .4s;
+    border-radius: 0 0 5px 5px;
+    outline: 2px solid white;
+    outline-offset: -2px;
+}
+
+main>.flex-container>.cards>a:hover {
+    background-color: rgb(9, 103, 9);
+}
+
+/*--------------------- footer----------------------*/
+footer {
+    font-family: 'Inter Tight', sans-serif;
+    color: white;
+    height: 150px;
+    background-color: rgb(56, 56, 56);
+
+}
+
+footer>.boxF {
+    display: flex;
+    justify-content: center;
+}
+
+footer>.boxF>div {
+    margin: 20px 100px 30px;
+}
+
+footer>.boxF>div>h4 {
+    text-decoration: underline;
+}
+
+footer>.boxF>div>p>a {
+    text-decoration: none;
+    color: white;
+}
+
+footer>#copyr {
+    text-align: center;
+}
+
+/* media quary */
+
+@media screen and (max-width:1259px) {
+    .navcontainer {
+        width: 1050px;
+        margin: auto;
+        /* border: 1px solid; */
+    }
+    .search-bar>input {        
+        padding: .5rem 1rem;
+        width: 200px;
+        max-width: 150px;
+    }
+    main>.flex-container {
+        width: 100%;
+        justify-content: center;
+        /* background-color: red; */
+    }
+}
+@media screen and (max-width:1060px) {
+    .navcontainer {
+        width: 830px;
+        margin: auto;
+        /* border: 1px solid; */
+    }
+    #cartLi{
+        display: none;
+    }
+    .search-bar>input {        
+        padding: .5rem 1rem;
+        max-width: 160px;
+    }
+    .selective-list-2 {
+        display: none;  
+    }
+    main>.flex-container {
+        width: 100%;
+        justify-content: center;
+        /* background-color: red; */
+    }
+}
+@media screen and (max-width:830px) {
+    .navcontainer {
+        width: 620px;
+        margin: auto;        
+    }
+    #plaLi, #sepBoderR{
+        display: none;
+    }
+    .selective-list-1>ul>li>a{
+        padding: .3em 1.55em;
+    }
+    main>.flex-container {
+        width: 100%;
+        justify-content: center;
+        /* background-color: red; */
+    }
+}
+@media screen and (max-width:700px) {
+    .navcontainer {
+        width: 100%;
+        margin: auto;  
+        /* background: #000;       */
+    }
+    .navbar>form{
+        display: none;
+    }
+    .selective-list-1{
+        display: none;
+    }
+    main {
+        margin: 5px 0 5px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 50px;
+        left: 0;
+    }
+    main>.flex-container {
+        width: 100%;
+        justify-content: center;
+        /* background-color: red; */
+    }
+    main>.flex-container>.cards {
+        margin: 6px 15px;
+        width: 100%;
+        height: 500px;
+        /* outline: 2px solid rgb(158, 158, 158); */
+        /* outline-offset: -2px; */
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        overflow: hidden;
+    }
+    
+    main>.flex-container>.cards>img {
+        height: 80%;
+        width: 80%;
+    }
+    
+    main>.flex-container>.cards>p {
+        text-align: center;
+        width: 95%;
+        height: 120px;
+        overflow: hidden;
+    }
+    footer {       
+        position: relative;
+        top: 50px;
+        left: 0;
+        height: 160px;;
+    }
+    footer>.boxF>div {
+        margin: 20px 20px 30px;
+    }
+}

@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.login-box {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgb(6 157 6), rgb(114, 186, 114));
+}
+
+
+.login-box .box {
+    min-width: 400px;
+    min-height: 415px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 10px #cccccc;
+    border-radius: 10px;
+}
+.login-box .box form{
+    margin: 40px 30px;
+}
+
+.login-box>.box>form>#icon {
+    /* position: absolute; */
+    /* top: 0px;
+    left: 20px; */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100PX;
+    width: 100PX;  */
+    /* background-color: #505050; */
+}
+.login-box>.box>form>#icon>img {
+    height: 60px;
+    display: inline-block;
+}
+.login-box>.box>form>#icon>a {
+    text-decoration: none;
+    padding: 0rem 0.2rem;
+    display: inline-block;
+    font-size: 1.9rem;
+    /* background-color: #505050; */
+    color: rgb(7, 205, 20);
+    font-family: 'Inter Tight', sans-serif;
+}
+.login-box>.box>form>#icon>a:hover {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+/* .login-box .box form h1 {
+    text-align: center;
+    margin-bottom: 0.5em;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-size: 2em;
+    font-weight: 900;
+    color: rgb(6 157 6);
+} */
+
+.login-box .box form .inputBox {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 2px solid silver;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.5s;
+    font-size: 1.2em;
+    font-family: 'Quicksand', sans-serif;
+}
+.login-box .box form #userinput{
+    margin: 20px auto 00px auto;
+}
+.login-box .box form #passinput{
+    margin: 22px auto 0px auto;
+}
+.login-box .box form .inputBox:focus {
+    border: 2px solid rgb(7, 205, 20);
+}
+.error{
+    width: 340px;
+    background-color: rgb(247, 184, 184);
+    text-align: center;
+    padding: 1px;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    outline: none;
+    color: red;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 2px 8px red;
+}
+/* #user_error{
+    
+    width: 20.5rem;
+    margin: 2px auto;
+    background-color: rgb(247, 184, 184);
+    text-align: center;
+    padding: 2px;
+    box-sizing: border-box;
+    border: 1px solid red;
+    border-radius: 10px;
+    outline: none;
+    color: red;
+    display: none;
+}
+#pass_error{
+    
+    width: 20.5rem;
+    margin: 2px auto;
+    background-color: rgb(247, 184, 184);
+    text-align: center;
+    padding: 2px;
+    box-sizing: border-box;
+    border: 1px solid red;
+    border-radius: 10px;
+    outline: none;
+    color: red;
+    display: none;
+} */
+
+.login-box .box form #rememberLogin {
+    margin-left: .5em;
+    margin-top: 20px;
+    /* border: 1px solid black; */
+    padding: 0;
+}
+
+.login-box .box form #rememberLogin #checkBox {
+    display: inline;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 2px;
+    /* border: 1px solid black; */
+}
+
+.login-box .box form #rememberLogin label {
+    display: inline-block;
+    font-size: 15px;
+    color: #505050;
+    /* border: 1px solid black; */
+    margin-top: -1px;
+}
+
+.login-box .box form button {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    margin: 15px auto;
+    margin-bottom: 0px;
+    padding: 15px 100px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    background-color: rgb(6 157 6);
+    color: white;
+    border: none;
+}
+
+#textSingUp {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 45px;
+    font-size: 15px;
+}
+
+#textSingUp a {
+    color: rgb(6 157 6);
+}
+
+#textSingUp a:active {
+    color: rgb(4, 104, 4);
+}

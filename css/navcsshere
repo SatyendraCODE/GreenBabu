@@ -1,0 +1,142 @@
+
+/*-------------------------navbar-------------------------- */
+nav{
+    background-color: rgb(56, 56, 56);
+    z-index: 1; 
+}
+.navcontainer{
+    display: block;
+    width:800px;
+    border: 1px solid black;
+    height: 200px;
+}
+.navbar {
+    display: flex;
+    /* flex-direction: row-reverse; */
+    width:100%;
+    justify-content: center;
+    height: 60px;
+    position: fixed;
+    top: 0;      
+    background-color: rgb(56, 56, 56);
+}
+
+/* navbaar logo */
+
+.navbar>#icon {
+    /* position: absolute;
+    top: 0px;
+    left: 20px; */
+    display: flex;
+}
+.navbar>#icon>img {
+    height: 60px;
+    display: inline-block;
+}
+.navbar>#icon>a {
+    text-decoration: none;
+    padding: 1rem 0.5rem;
+    font-size: 1.5rem;
+    color: rgb(12, 182, 12);
+}
+
+/* searchbar with search button */
+
+.navbar>.search-bar {
+    /* position: relative;
+    right: 1m; */
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.navbar>.search-bar>input {
+    width: 1.1em;
+    padding: .5rem 1rem;
+    min-width: 100px;
+    border: 3px solid rgb(56, 56, 56);
+    outline: none;
+    border-radius: 8px;
+    margin-right: 0px;
+    font-size: .9rem;
+    transition: .5s;
+}
+.navbar>.search-bar>input:focus{
+    border: 3px solid rgb(6 157 6);
+    /* outline: 2px solid rgb(6 157 6);
+    outline-offset: -3px; */
+}
+.navbar>.search-bar>button {
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    border-radius: 0px 5px 5px 0px;
+    /* border-left: 1px solid rgb(0, 0, 0); */
+    width: 40px;
+    height: 35.5px;
+    background-color: rgb(6 157 6);
+    transition: .5s;
+    position: relative;
+    /* left: -42px; */
+}
+.navbar>.search-bar>button>img {
+    height: 35px;
+    filter: invert(100%);
+    transition: .4s;
+}
+.navbar>.search-bar>button:hover>img{
+    filter: invert(0%);
+}
+
+/* nav list */
+.navbar>ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar>ul>li {
+    overflow: hidden;
+}
+
+/* seprating nav contant and user login and sign up */
+.navbar>ul #sepBoderR {
+    padding-right: 10px;
+    border-right: 2px solid rgb(139, 139, 139);
+}
+
+.navbar>ul #sepBoderL {
+    padding-left: 10px;
+}
+
+.navbar>ul>li>a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: .4s;
+}
+
+.navbar>ul>li>a:hover {
+    background-color: rgb(6 157 6);
+    /* border-bottom: .5px solid white; */
+}
+
+.navbar>ul>li #cartA {
+    padding: 1.22rem 1.4rem;
+}
+
+.navbar>ul>li #plaA {
+    padding: 1.22rem 1.4rem;
+}
+
+.navbar>ul>li #supportA {
+    padding: 1.22rem 1rem;
+}
+
+.navbar>ul>li #loginA {
+    padding: 1.22rem 1rem;
+}
+
+.navbar>ul>li #signUpA {
+    padding: 1.22rem 1rem;
+}

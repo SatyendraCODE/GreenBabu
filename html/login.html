@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Using boxes here.. -->
+    <section class="login-box">
+        <div class="box">
+            <form method="post" name="form" onsubmit="return valided()">
+                <div id="icon">
+                    <img src="../img/icons8-green-100.png" alt="GreenBABU_icon">
+                    <a href="../index.html">GreenBABU</a>
+                </div>
+                <!-- <h1>LOGIN</h1> -->
+                <input type="text" id="userinput" class="inputBox" name="username" placeholder="Username">
+                <div id="user_error" class="error">Please fill up your Username</div>
+
+                <input type="password" id="passinput" class="inputBox" name="password" placeholder="Password">
+                <div id="pass_error" class="error">Please fill up your Password</div>
+
+                <div id="rememberLogin">
+                    <input type="checkbox" id="checkBox" name="remember" value="remember">
+                    <label for="remember"> Remember me</label>
+                </div>
+                <button type="submit">LOGIN</button>
+                <p id="textSingUp">Not a member? <a href="singUpForm.html">Create Account</a></p>
+            </form>
+        </div>
+    </section>
+    <script src="../js/validation.js"></script>
+</body>
+
+</html>
